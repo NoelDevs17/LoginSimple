@@ -29,69 +29,69 @@ namespace LoginSimple
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.lblUser = new System.Windows.Forms.Label();
+            this.lblPass = new System.Windows.Forms.Label();
+            this.lblLog = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txtUser
             // 
-            this.textBox1.Location = new System.Drawing.Point(101, 128);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(179, 23);
-            this.textBox1.TabIndex = 0;
+            this.txtUser.Location = new System.Drawing.Point(101, 128);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(179, 23);
+            this.txtUser.TabIndex = 0;
             // 
-            // textBox2
+            // txtPassword
             // 
-            this.textBox2.Location = new System.Drawing.Point(101, 157);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(179, 23);
-            this.textBox2.TabIndex = 1;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.txtPassword.Location = new System.Drawing.Point(101, 157);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.Size = new System.Drawing.Size(179, 23);
+            this.txtPassword.TabIndex = 1;
+            this.txtPassword.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
-            // label1
+            // lblUser
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Historic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(45, 123);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(54, 25);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "User:";
+            this.lblUser.AutoSize = true;
+            this.lblUser.Font = new System.Drawing.Font("Segoe UI Historic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblUser.Location = new System.Drawing.Point(45, 123);
+            this.lblUser.Name = "lblUser";
+            this.lblUser.Size = new System.Drawing.Size(54, 25);
+            this.lblUser.TabIndex = 2;
+            this.lblUser.Text = "User:";
             // 
-            // label2
+            // lblPass
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Historic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(3, 155);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 25);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Password:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.lblPass.AutoSize = true;
+            this.lblPass.Font = new System.Drawing.Font("Segoe UI Historic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblPass.Location = new System.Drawing.Point(3, 155);
+            this.lblPass.Name = "lblPass";
+            this.lblPass.Size = new System.Drawing.Size(96, 25);
+            this.lblPass.TabIndex = 3;
+            this.lblPass.Text = "Password:";
+            this.lblPass.Click += new System.EventHandler(this.label2_Click);
             // 
-            // label3
+            // lblLog
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Historic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(144, 83);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(80, 32);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Log in";
+            this.lblLog.AutoSize = true;
+            this.lblLog.Font = new System.Drawing.Font("Segoe UI Historic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblLog.Location = new System.Drawing.Point(144, 83);
+            this.lblLog.Name = "lblLog";
+            this.lblLog.Size = new System.Drawing.Size(80, 32);
+            this.lblLog.TabIndex = 4;
+            this.lblLog.Text = "Log in";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(324, 364);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblLog);
+            this.Controls.Add(this.lblPass);
+            this.Controls.Add(this.lblUser);
+            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtUser);
             this.Name = "Form1";
             this.Text = "Login";
             this.ResumeLayout(false);
@@ -101,11 +101,11 @@ namespace LoginSimple
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtUser;
+        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.Label lblUser;
+        private System.Windows.Forms.Label lblPass;
+        private System.Windows.Forms.Label lblLog;
     }
 }
 
