@@ -7,11 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.Data.SqlClient;
+
+
+
 
 namespace LoginSimple
 {
     public partial class Form1 : Form
+
+        
     {
+        SqlConnection con = new SqlConnection("Data Source=NOELDRUMS17;Initial Catalog=login;Integrated Security=True");
+
+
+
         public Form1()
         {
             InitializeComponent();
@@ -30,6 +40,11 @@ namespace LoginSimple
         private void lblUser_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnAcces_Click(object sender, EventArgs e)
+        {
+            con.Open();
         }
     }
 }

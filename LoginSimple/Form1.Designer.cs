@@ -102,6 +102,7 @@ namespace LoginSimple
             this.btnAcces.TabIndex = 5;
             this.btnAcces.Text = "Access";
             this.btnAcces.UseVisualStyleBackColor = false;
+            this.btnAcces.Click += new System.EventHandler(this.btnAcces_Click);
             // 
             // label1
             // 
