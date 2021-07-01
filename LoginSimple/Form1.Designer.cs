@@ -48,6 +48,7 @@ namespace LoginSimple
             this.txtUser.Name = "txtUser";
             this.txtUser.Size = new System.Drawing.Size(179, 23);
             this.txtUser.TabIndex = 0;
+            this.txtUser.TextChanged += new System.EventHandler(this.txtUser_TextChanged);
             // 
             // txtPassword
             // 

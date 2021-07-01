@@ -18,13 +18,32 @@ namespace LoginSimple
 
         
     {
-        SqlConnection con = new SqlConnection("Data Source=NOELDRUMS17;Initial Catalog=login;Integrated Security=True");
+      //  SqlConnection con = new SqlConnection("Data Source=NOELDRUMS17;Initial Catalog=login;Integrated Security=True");
 
-
+        
 
         public Form1()
         {
             InitializeComponent();
+           
+
+        }
+        public void login()
+        {
+            SqlConnection conexion = new SqlConnection("Data Source=NOELDRUMS17;Initial Catalog=login;Integrated Security=True");
+            conexion.Open();
+            SqlCommand cmd = new SqlCommand("SELECT username, password FROM usuarios WHERE username='" + txtUser.Text + "' AND password ='" + txtPassword.Text + "'", conexion);
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                MessageBox.Show("Login exitoso");
+                
+            }
+            else
+            {
+                MessageBox.Show("Hubo un error");
+            }
+            conexion.Close();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -44,7 +63,17 @@ namespace LoginSimple
 
         private void btnAcces_Click(object sender, EventArgs e)
         {
-            con.Open();
+            login();
+            
+            
+        }
+
+        private void txtUser_TextChanged(object sender, EventArgs e)
+        {
+            
+           
+
+           
         }
     }
 }
