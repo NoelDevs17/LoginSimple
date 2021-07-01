@@ -16,17 +16,11 @@ namespace LoginSimple
 {
     public partial class Form1 : Form
 
-        
     {
-      //  SqlConnection con = new SqlConnection("Data Source=NOELDRUMS17;Initial Catalog=login;Integrated Security=True");
-
-        
-
+      
         public Form1()
         {
             InitializeComponent();
-           
-
         }
         public void login()
         {
@@ -45,7 +39,12 @@ namespace LoginSimple
             }
             conexion.Close();
         }
+        public void limpiar()
+        {
+            txtUser.Clear();
+            txtPassword.Clear();
 
+        }
         private void label2_Click(object sender, EventArgs e)
         {
 
@@ -63,17 +62,15 @@ namespace LoginSimple
 
         private void btnAcces_Click(object sender, EventArgs e)
         {
+           
             login();
-            
-            
+            limpiar();
+           
         }
 
         private void txtUser_TextChanged(object sender, EventArgs e)
         {
-            
-           
-
-           
+     
         }
     }
 }
